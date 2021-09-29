@@ -1,4 +1,20 @@
-include: package:flutter_lints/flutter.yaml
+# https://pub.dev/packages/pedantic_mono
+include: package:pedantic_mono/analysis_options.yaml
 
-# Additional information about this file can be found at
-# https://dart.dev/guides/language/analysis-options
+analyzer:
+  language:
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    # TODOをProblemsに表示しない
+    todo: ignore
+  exclude:
+    - lib/**/*.g.dart
+    - lib/**/*.freezed.dart
+    - lib/generated_plugin_registrant.dart
+    - test/**/*.mocks.dart
+    - plugins/**
+linter:
+  rules:
+    # 相対インポート
+    prefer_relative_imports: true
