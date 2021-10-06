@@ -1,3 +1,8 @@
-## 0.0.1
+## 1.1.0
 
-* TODO: Describe initial release.
+* Add widgets
+
+## 1.0.0
+
+* Add analysis_options.yaml
+* Add theme_data
