@@ -5,14 +5,19 @@ analyzer:
   language:
     strict-inference: true
     strict-raw-types: true
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
   errors:
+    missing_required_param: warning
+    missing_return: warning
     # TODOをProblemsに表示しない
     todo: ignore
   exclude:
-    - lib/**/*.g.dart
-    - lib/**/*.freezed.dart
-    - lib/generated_plugin_registrant.dart
-    - test/**/*.mocks.dart
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+    - "**/*.mocks.dart"
+    - "**/generated_plugin_registrant.dart"
     - plugins/**
 linter:
   rules:
